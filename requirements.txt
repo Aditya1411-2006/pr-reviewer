@@ -1,0 +1,5 @@
+PyGithub>=2.1.1
+openai>=1.12.0
+pydantic>=2.6.0
+pytest>=8.0.0
+flake8>=7.0.0
