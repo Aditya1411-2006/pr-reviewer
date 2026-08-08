@@ -59,3 +59,5 @@ class PRReviewer:
 
         raw_json = json.loads(response.choices[0].message.content)
         return ReviewResponse(**raw_json)
+
+    ReviewComment = Comment
