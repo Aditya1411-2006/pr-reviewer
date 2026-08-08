@@ -72,7 +72,7 @@ def main():
 
     if __name__ == "__main__":
         main()
-            pr.create_issue_comment(fallback_body)
+        pr.create_issue_comment(fallback_body)
 
     if __name__ == "__main__":
         main()
