@@ -41,5 +41,6 @@ Code Change:
             messages=[{"role": "user", "content": prompt}],
             response_format={"type": "json_object"}
         )
+        if not response.choices or response.choices[0].message.content is None:
+            raise ValueError("Empty response from LLM")
         raw_json = json.loads(response.choices[0].message.content)
-        return ReviewResponse(**raw_json)
